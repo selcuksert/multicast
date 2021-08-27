@@ -1,7 +1,7 @@
 FROM adoptopenjdk:11-jre-hotspot
 
 LABEL author="Selçuk SERT"
-LABEL mail="ssert@aselsan.com.tr"
+LABEL mail="ssert@gmail.com"
 LABEL description="Sample multicast message receiver using Vert.x UDP utilities"
 
 ENV TZ=Europe/Istanbul
