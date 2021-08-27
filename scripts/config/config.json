@@ -1,0 +1,17 @@
+{
+	"sender": {
+		"maxNoOfMessages": 100,
+		"logUdpActivity": false,
+		"messageSizeInBytes": 10
+	},
+	"multicast": {
+		"host": "234.3.2.1",
+		"port": 1234
+	},
+	"receiver": {
+		"host": "0.0.0.0",
+		"port": 1234,
+		"networkInterface": "eth0",
+		"logUdpActivity": false
+	}
+}
