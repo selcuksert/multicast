@@ -6,11 +6,11 @@
 			<PatternLayout
 				pattern="%d{dd/MM/yy HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
 		</Console>
-		<File name="FileLogger" bufferedIO="true" fileName="./logs/${env:RECEIVER_ID}/receiver.log" append="false">
+		<File name="FileLogger" bufferedIO="true" fileName="./logs/${env:HOSTNAME}/receiver.log" append="false">
 			<PatternLayout
 				pattern="%d{dd/MM/yy HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
 		</File>
-		<File name="UdpLogger" bufferedIO="true" fileName="./logs/${env:RECEIVER_ID}/receiver-udp.log" append="false">
+		<File name="UdpLogger" bufferedIO="true" fileName="./logs/${env:HOSTNAME}/receiver-udp.log" append="false">
 			<PatternLayout
 				pattern="%d{dd/MM/yy HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
 		</File>
