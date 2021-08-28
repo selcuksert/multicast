@@ -15,15 +15,7 @@ services:
       - ./config:/opt/udp/receiver/config
     networks:
       - netipvlan
+
 networks:
   netipvlan:
-    driver: ipvlan
-    driver_opts:
-      parent: eth0
-      ipvlan_mode: l2
-    ipam:
-      driver: default
-      config:
-        - subnet: 192.168.1.0/24
-          gateway: 192.168.1.1
-          ip_range: 192.168.1.192/27
+    external: true
